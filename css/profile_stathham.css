@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../Fonts/Vazir.eot),
+    url(../Fonts/Vazir.ttf),
+    url(../Fonts/Vazir.woff),
+    url(../Fonts/Vazir.woff2);
+  }
+  
+  @font-face {
+    font-family: "shabnam";
+    src: url(../Fonts/Shabnam-Bold.eot),
+    url(../Fonts/Shabnam-Bold.ttf),
+    url(../Fonts/Shabnam-Bold.woff),
+    url(../Fonts/Shabnam-Bold.woff2);
+  }
+body{
+    background-color: rgb(29, 26, 41);
+
+}
+/* start code CSS nav bar */
+nav{
+    width: 100%;
+    height: auto;
+    background-color: rgb(66, 58, 112);
+    margin-top: 2%;
+  }
+  ul img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: "vazir";
+    color: white;
+  }
+  ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .icon_search{
+    float: left;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    color: rgb(224, 218, 218);
+    cursor: pointer;
+  }
+  .btn_login{
+    float: left;
+    margin-left: 5%;
+    margin-top: 3.4%;
+    width: 10%;
+    height: 38px;
+    font-family: "shabnam";
+    background-color: rgb(14, 14, 48);
+    border: 1px solid rgb(14, 14, 48);
+    color: rgb(156, 153, 173);
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .btn_login:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  .div_search{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 27, 59);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: none;
+    -webkit-animation: div_search 0.3s;
+  }
+  .div_search h1{
+    text-align: center;
+    font-family: "shabnam";
+    color: rgb(184, 182, 194);
+    margin-top: 7%;
+  }
+  .div_search_input{
+    margin-right: 20%;
+    margin-top: 2%;
+    width: 60%;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(46, 46, 122);
+    color: white;
+    font-size: 30px;
+    transition: 0.2s;
+    font-family: "vazir";
+    background-image: url(../pic/search.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 2rem center;
+  }
+  .div_search_input::-webkit-search-decoration,
+  .div_search_input::-webkit-search-cancel-button,
+  .div_search_input::-webkit-search-results-button,
+  .div_search_input::-webkit-search-results-decoration{
+  display: none;
+  }
+  
+  .div_search_input:focus{
+    outline: none;
+    background-color: rgb(37, 37, 117);
+    border: 1px solid rgb(184, 182, 194);
+    transition: 0.2s;
+  }
+  .div_search_btn{
+    width: 20%;
+    height: auto;
+    margin-top: 1%;
+    margin-right: 40%;
+    font-size: 25px;
+    font-family: "shabnam";
+    background-color: rgb(35, 35, 150);
+    color: rgb(184, 182, 194);
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  .div_search_btn:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+  .div_search_h5{
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    font-family: "vazir";
+  }
+  @keyframes div_search {
+    0%{
+      opacity: 0.3;
+    }
+    50%{
+      opacity: 1;
+    }
+  }
+  .icon_close{
+    margin-right: 1%;
+    margin-top: 1%;
+    cursor: pointer;
+    color: white;
+  }
+  /* end code CSS nav bar*/
+
+
+ /*start code CSS bio cast*/
+.bio_cast_div{
+    width: 98% !important;
+    height: auto;
+    background-color: rgb(45, 38, 87);
+    margin-right: 1% !important;
+}
+.bio_cast_div h1{
+    color: rgb(184, 182, 194);
+    font-family: "shabnam";
+}
+.bio_cast_div hr{
+    color: white;
+}
+.bio_cast_div img{
+    position: relative;
+    right: -10% !important;
+}
+.bio_cast_p{
+    color: rgb(241, 235, 235);
+    font-family: "vazir";
+}
+
+
+ /*end  code CSS bio cast*/

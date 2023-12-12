@@ -1,0 +1,587 @@
+
+@font-face {
+    font-family: "vazir";
+    src: url(../Fonts/Vazir.eot),
+    url(../Fonts/Vazir.ttf),
+    url(../Fonts/Vazir.woff),
+    url(../Fonts/Vazir.woff2);
+  }
+  
+  @font-face {
+    font-family: "shabnam";
+    src: url(../Fonts/Shabnam-Bold.eot),
+    url(../Fonts/Shabnam-Bold.ttf),
+    url(../Fonts/Shabnam-Bold.woff),
+    url(../Fonts/Shabnam-Bold.woff2);
+  }
+ 
+body{
+    background-color: rgb(29, 26, 41);
+   
+}
+
+/* start code CSS nav bar */
+
+nav{
+  width: 100%;
+  height: auto;
+  background-color: rgb(66, 58, 112);
+  margin-top: 2%;
+}
+ul img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+  padding-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "vazir";
+  color: white;
+}
+ul li a{
+  color: white;
+  text-decoration: none;
+}
+.icon_search{
+  float: left;
+  margin-left: 5%;
+  margin-top: 3.5%;
+  color: rgb(224, 218, 218);
+  cursor: pointer;
+}
+.btn_login{
+  float: left;
+  margin-left: 5%;
+  margin-top: 3.4%;
+  width: 10%;
+  height: 38px;
+  font-family: "shabnam";
+  background-color: rgb(14, 14, 48);
+  border: 1px solid rgb(14, 14, 48);
+  color: rgb(156, 153, 173);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn_login:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.div_search{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 27, 59);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: none;
+  -webkit-animation: div_search 0.3s;
+}
+.div_search h1{
+  text-align: center;
+  font-family: "shabnam";
+  color: rgb(184, 182, 194);
+  margin-top: 7%;
+}
+.div_search_input{
+  margin-right: 20%;
+  margin-top: 2%;
+  width: 60%;
+  height: 80px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: rgb(46, 46, 122);
+  color: white;
+  font-size: 30px;
+  transition: 0.2s;
+  font-family: "vazir";
+  background-image: url(../pic/search.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 2rem center;
+}
+.div_search_input::-webkit-search-decoration,
+.div_search_input::-webkit-search-cancel-button,
+.div_search_input::-webkit-search-results-button,
+.div_search_input::-webkit-search-results-decoration{
+display: none;
+}
+
+.div_search_input:focus{
+  outline: none;
+  background-color: rgb(37, 37, 117);
+  border: 1px solid rgb(184, 182, 194);
+  transition: 0.2s;
+}
+.div_search_btn{
+  width: 20%;
+  height: auto;
+  margin-top: 1%;
+  margin-right: 40%;
+  font-size: 25px;
+  font-family: "shabnam";
+  background-color: rgb(35, 35, 150);
+  color: rgb(184, 182, 194);
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.div_search_btn:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.div_search_h5{
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  font-family: "vazir";
+}
+@keyframes div_search {
+  0%{
+    opacity: 0.3;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+.icon_close{
+  margin-right: 1%;
+  margin-top: 1%;
+  cursor: pointer;
+  color: white;
+}
+/* end code CSS nav bar*/
+
+
+/* start code CSS info_div */
+
+.info_div{
+  background-color: rgb(45, 38, 87);
+  width: 98%;
+  border-radius: 10px;
+  margin-right: 1%;
+
+}
+.info_div img{
+  width: 600px;
+  height: 600px;
+  position: relative;
+  right: 50%;
+  top: -100px;
+}
+.h4_info{
+  width: 50%;
+  color: white;
+  font-family: "vazir";
+  position: relative;
+  top: 300px;
+  right: 5%;
+  
+}
+/* end code CSS info_div */
+
+
+/* start code CSS search div */
+.serach-div{
+  width: 98%;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: 1%;
+  border-radius: 10px;
+  background-color: rgb(45, 38, 87);
+  text-align: center;
+}
+
+.input-search{
+  width: 40%;
+  height: 40px;
+  background-color: rgb(12, 12, 53);
+  border: 1px solid rgb(12, 12, 53);
+  color: rgb(118, 111, 148); 
+  outline: none;
+  border-radius: 5px;
+  margin-top: 1.5%;
+  font-family: "vazir";
+  transition: 0.3s;
+}
+.input-search::-webkit-search-decoration,
+.input-search::-webkit-search-cancel-button,
+.input-search::-webkit-search-results-button,
+.input-search::-webkit-search-results-decoration{
+display: none;
+}
+.input-search::placeholder{
+  font-family: "vazir";
+  padding-right: 1%;
+}
+.input-search:focus{
+  transition: 0.3s;
+  background-color: rgb(33, 33, 100);
+  border: 1px solid rgb(33, 33, 100);
+}
+.submit-search{
+  width: 10%;
+  height: 38px;
+  font-family: "vazir";
+  background-color: rgb(14, 14, 48);
+  border: 1px solid rgb(14, 14, 48);
+  color: rgb(118, 111, 148);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-right: 1%;
+
+}
+.submit-search:hover{
+  transition: 0.3s;
+  border: 1px solid rgb(38, 23, 102);
+  transform: scale(1.1);
+  box-shadow: inset -10.5em 0 0 0 rgb(38, 23, 102) , inset 10.5em 0 0 0 rgb(38, 23, 102);
+}
+/* end code CSS search div  */
+
+/* start code CSS filtering div */
+.filter-div{
+  background-color: rgb(45, 38, 87);
+  width: 98%;
+  height: 130px;
+  margin-right: 1%;
+  margin-top: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+.serach-advance-p{
+  color: rgb(184, 182, 194);
+  font-size: 25px;
+  font-family: "shabnam";
+  padding-top: 0.5%;
+}
+.select-item{
+  margin-top: 1%;
+  margin-right: 1%;
+  width: 15%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(31, 17, 71);
+  border: 1px solid rgb(31, 17, 71);
+  color: rgb(156, 153, 173);
+  font-size: 20px;
+  font-family: "shabnam";
+  text-align: center;
+  cursor: pointer;
+}
+.select-item option:hover{
+background-color: red;
+}
+.btn-search{
+  width: 10%;
+  height: 38px;
+  font-family: "vazir";
+  background-color: rgb(14, 14, 48);
+  border: 1px solid rgb(14, 14, 48);
+  color: rgb(156, 153, 173);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-right: 1%;
+}
+.btn-search:hover{
+  transition: 0.3s;
+  border: 1px solid rgb(38, 23, 102);
+  transform: scale(1.1);
+  box-shadow: inset -10.5em 0 0 0 rgb(38, 23, 102) , inset 10.5em 0 0 0 rgb(38, 23, 102);
+}
+.option_disabled{
+  display: none;
+}
+
+/* end code CSS filtering div */
+/* start code CSS list_cast */
+.list_cast_div{
+  background-color: rgb(45, 38, 87);
+  border-radius: 10px;
+  margin-top: 1%;
+  width: 90%;
+  margin-right: 5%;
+  height: 700px !important;
+  overflow-y: scroll;
+}
+.hr-list_cast{
+  color: white; 
+  position: sticky;
+  top: 0;
+}
+.list_cast_div h2{
+  color: rgb(184, 182, 194);
+  font-family: "shabnam";
+  text-align: center;
+  padding-top: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(45, 38, 87);
+  padding-bottom: 1.5%;
+}
+.card_list_cast{
+  background-color: rgb(31, 17, 71);
+  margin-right: 1%;
+  display: inline-block !important;
+  height: auto !important;
+  margin-bottom: 3%;
+  margin-right: 1%;
+}
+.btn-showmore_cast{
+  background-color: rgb(14, 14, 48);
+  border: 1px solid rgb(14, 14, 48);
+  color: rgb(184, 182, 194);
+  font-family: "shabnam";
+  transition: 0.3s !important;
+  width: 100%;
+  height: auto ;
+  border-radius: 5px !important;
+
+}
+.btn-showmore_cast:hover{
+  background-color: rgb(30, 30, 128);
+  border: 1px solid rgb(30, 30, 128);
+  transition: 0.3s !important;
+}
+.btn-showmore_cast:active{
+  background-color: rgb(30, 30, 128) !important;
+  border: 1px solid rgb(30, 30, 128) !important;
+}
+
+.list_cast_div::-webkit-scrollbar{
+  background-color: rgb(54, 42, 126);
+  border-radius: 6px 0px 0px 6px;
+
+ 
+}
+.list_cast_div::-webkit-scrollbar-thumb{
+  background-color: rgb(108, 93, 189);
+  border-radius: 6px 0px 0px 6px;
+
+}
+.title-card-scarlett-johansson{
+  font-size: 14px;
+}
+/* end code CSS list_cast */
+/* start code CSS popular movies */
+.popular-movies{
+  width: 98%;
+  height: auto;
+  background-color: rgb(45, 38, 87);
+  margin-top: 3%;
+  margin-right: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+.popular-movies-h2{
+color: rgb(184, 182, 194);
+font-family: "shabnam";
+padding-top: 1%;
+}
+.hr-popular-movies{
+  color: white; 
+}
+.card-popular-movies{
+  background-color: rgb(31, 17, 71);
+  margin-right: 1%;
+  display: inline-block !important;
+  height: auto !important;
+  margin-bottom: 3%;
+}
+.title-card{
+  color: rgb(184, 182, 194);
+  font-family: "shabnam";
+  text-align: center;
+}
+.card-txt{
+  color: rgb(184, 182, 194);
+  font-family: "vazir";
+  overflow: auto;
+  text-align: center;
+
+}
+.btn-showmore{
+  background-color: rgb(14, 14, 48);
+  border: 1px solid rgb(14, 14, 48);
+  color: rgb(184, 182, 194);
+  font-family: "shabnam";
+  transition: 0.3s !important;
+  width: 100%;
+  height: auto ;
+  position: sticky;
+  bottom: 0;
+  border-radius: 0% !important;
+}
+.btn-showmore:hover{
+ background-color: rgb(30, 30, 128);
+ border: 1px solid rgb(30, 30, 128);
+ transition: 0.3s !important;
+}
+.btn-showmore:active{
+  background-color: rgb(30, 30, 128) !important;
+  border: 1px solid rgb(30, 30, 128) !important;
+}
+.img_populars{
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+  position: sticky;
+  top: 0;
+}
+/* end code strat CSS popular movies  */
+
+/* strat code CSS popular serial */
+.popular-serial{
+  width: 98%;
+  height: auto;
+  background-color: rgb(45, 38, 87);
+  margin-top: 3%;
+  margin-right: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+.popular-serial-h2{
+  color: rgb(184, 182, 194);
+  font-family: "shabnam";
+  padding-top: 1%;
+}
+.hr-popular-serial{
+  color: white; 
+}
+.card-popular-serial{
+    background-color: rgb(31, 17, 71);
+    margin-right: 1%;
+    display: inline-block !important;
+    /* height: 400px !important; */
+    margin-bottom: 3%;
+}
+.card_overflow{
+  position: relative;
+  overflow-y: scroll;
+  height: 500px !important;
+
+}
+.card_overflow::-webkit-scrollbar{
+  background-color: rgb(54, 42, 126);
+  border-radius: 6px 0px 0px 6px;
+
+ 
+}
+.card_overflow::-webkit-scrollbar-thumb{
+  background-color: rgb(108, 93, 189);
+  border-radius: 6px 0px 0px 6px;
+
+}
+
+/* end code CSS popular serial */
+
+/* start code CSS footer */
+.footer{
+  width: 100%;
+  background-color: rgb(45, 45, 110);
+  height: auto;
+  margin-top: 1%;
+  border-radius: 200px 0px 0px 0px;
+  padding-bottom: 1%;
+}
+.importantlinks-div{
+  background-color: rgb(45, 45, 110);
+  width: 30%;
+  text-align: center;
+  margin-right: 5%;
+  position: relative;
+  top: 6%;
+}
+.importantlinks-div h5{
+  font-family: "shabnam";
+  padding-top: 3%;
+  color: rgb(184, 182, 194);
+}
+.footer hr{
+  color: black;
+}
+.importantlinks-div a{
+  text-decoration: none;
+  color: white;
+  font-family: "vazir";  
+}
+.importantlinks-div a:hover{
+  color: rgb(224, 207, 207);
+}
+.copyright-txt{
+  margin-top: 2%;
+  color: white;
+  font-family: "vazir";
+  margin-right: 5%;
+  text-align: center;
+
+}
+.location-txt{
+  color: white;
+  font-family: "vazir";
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.email-txt{
+  color: white;
+  font-family: "vazir";
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.email-txt mark{
+  background-color: rgb(37, 20, 112);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white; 
+}
+.email-txt a{
+  color: white;
+}
+.tel-txt{
+  color: white;
+  font-family: "vazir";
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.tel-txt mark{
+  background-color: rgb(37, 20, 112);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+}
+.tel-txt a{
+  color: white;
+
+}
+.copyright-txt mark{
+  background-color: rgb(37, 20, 112);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+}
+.social-media-div{
+  width: 20%;
+  height: 50px;
+  position: relative;
+  right: 80%;
+}
+.all-social-media{
+  width: 30px;
+  height: 30px;
+  margin-right: 7%;
+  color: rgb(202, 195, 221);  
+  transition: 0.2s;
+  cursor: pointer;
+
+}
+.all-social-media:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+/* end code CSS footer */
